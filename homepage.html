@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>homepage</title>
+</head>
+<body>
+    <header id="header">
+            <img src="Ecoforest-Logo.png" class="logo">
+            <ul>
+              <li> <a href="#" class="active">Home</a></li>
+              <li> <a href="#">About</a></li>
+              <li> <a href="#">Explore</a></li>
+              <li> <a href="#">Gallery</a></li>
+              <li> <a href="#">Contact us</a></li>
+            </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest">
+       <a href="#" id="btn">Explore</a>
+         <img src="rocks.png" id="rocks">
+         <img src="water.png" id="water">
+    </section>
+    <div class="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur iure saepe soluta doloribus eius et ab laboriosam, quis, assumenda inventore ut. Molestias nihil id eius natus molestiae expedita tempore. Qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure officia quia sapiente unde delectus commodi deleniti explicabo amet fugit praesentium maxime necessitatibus aperiam dolorem, nulla sint voluptatem, odio et velit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident officia esse, repellat necessitatibus ab autem natus doloribus vitae nobis quasi eaque fuga? Temporibus maxime reprehenderit error deleniti dolorum ipsa magni? <br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum eaque necessitatibus repudiandae, corrupti in cumque, doloremque optio illum tempore libero vel nostrum consectetur quisquam ducimus quod ipsa perspiciatis harum quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam perspiciatis nostrum eaque hic sed, modi rerum fuga similique itaque deleniti! Odio sit praesentium aliquid itaque facere, sed dolorum natus repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ex laudantium nemo quisquam, ad optio. Modi assumenda ab mollitia est corporis dolores nisi officia ducimus recusandae ad beatae, aut et. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatum cum expedita placeat aliquid sed corporis tenetur. Esse ipsa incidunt ea sed, iure temporibus perferendis suscipit? Hic, modi! Amet, voluptate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quasi nemo labore aperiam asperiores magni maiores unde assumenda aliquam iusto. Eligendi reprehenderit earum excepturi animi consectetur dolor dolorum harum at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem architecto, delectus suscipit aperiam odit atque qui tempore. Repellat voluptate nesciunt non quasi maxime quas porro itaque, quibusdam odio quaerat iure. <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt totam ipsum, minima laborum explicabo nesciunt quis et corrupti non praesentium eveniet nam culpa cum ex harum hic dolorum aliquam delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque impedit molestias pariatur ad delectus quod autem soluta ullam quasi deleniti quam reprehenderit aut voluptatum, est aperiam facilis! Quos, dolore aperiam. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat tempore praesentium id similique porro voluptatum dignissimos libero, repellat, alias odit distinctio vel, possimus illo laborum facere sint debitis placeat consectetur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, omnis enim beatae eos vero quo autem. Natus neque qui corrupti, dicta quae porro aspernatur perferendis rerum suscipit? Dolores, distinctio corrupti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis odit neque velit, provident nam similique corporis placeat, asperiores beatae dicta incidunt debitis, assumenda impedit quae a minima vero veniam ea! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia velit, error minima ad reiciendis soluta ex possimus, id temporibus obcaecati totam. Quo quibusdam dolores doloremque a quae quisquam inventore distinctio.</p>
+
+    </div>
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+        window.addEventListener('scroll',function(){
+           let value =window.scrollY;
+           text.style.top= 50 + value* -0.5 +'%';
+           bird1.style.top=value* -1.5 +'px';
+           bird1.style.left=value* 2 +'px';
+           bird2.style.top=value* -1.5 +'px';
+           bird2.style.left=value * -5 +'px';
+           btn.style.marginTop=value*1.5+'px';
+           rocks.style.top=value* -0.12+'px';
+           forest.style.top=value*0.25+'px';
+           header.style.top=value*0.5+'px';
+           
+       })
+    </script>
+    
+</body>
+</html>
